@@ -1,5 +1,5 @@
 {
   "seedFolder": "./seed_papers",
   "arxivCategories": ["cs.AI", "cs.LG"],
-  "biorxivCategories": ["bioinformatics", "genomics"],
+  "biorxivCategories": ["bioinformatics", "genomics"]
 }
