@@ -1,0 +1,11 @@
+name: Scheduled Preprint Recommender
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # Runs daily at 3 am UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  call-reusable-preprint-recommender:
+    uses: adigioacchino/preprint-recommender/.github/workflows/reusable-preprint-recommender.yml@v1
+    secrets: inherit
