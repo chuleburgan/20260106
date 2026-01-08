@@ -8,4 +8,7 @@ on:
 jobs:
   call-reusable-preprint-recommender:
     uses: adigioacchino/preprint-recommender/.github/workflows/reusable-preprint-recommender.yml@v1
-    secrets: inherit
+    secrets:
+      GENAI_API_KEY: ${{ secrets.GENAI_API_KEY }}
+      EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
